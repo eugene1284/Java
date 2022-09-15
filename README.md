@@ -1,3 +1,3 @@
 # Java
-Eugene Bukin repo's \n
-Group: GU | Программирование | 4 |
+## Eugene Bukin repo's for homework
+### Group: GU | Программирование | 4 |
