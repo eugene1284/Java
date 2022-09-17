@@ -31,10 +31,11 @@ public class homework3_3 {
         }
         double avg = (double) sum / (double) list.size();
 
-        System.out.println("минимальное число: " + min);
-        System.out.println("максимальное число: " + max);
-        System.out.println("Среднеарифметическое заданного списка: " + avg);
+        System.out.println("Минимальное число: " + min);
+        System.out.println("Максимальное число: " + max);
+        System.out.println("Среднее арифметическое заданного списка: " + avg);
 
+        System.out.printf("Минимальное число = %d, Максимальное = %d, Среднее арифметическое = %.1f", min, max,avg);
     }
 
 }
