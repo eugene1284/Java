@@ -1,5 +1,3 @@
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.Scanner;
 
 /*
@@ -28,7 +26,10 @@ public class homework4 {
         int element = scan.nextInt();
         System.out.println(offerFirst(arr, element));
         System.out.println(offerLast(arr, element));
-
+        System.out.println("peekFirst(arr): " + peekFirst(arr));
+        System.out.println("peekLast(arr): " + peekLast(arr));
+        System.out.println("pollFirst(arr): " + pollFirst(arr));
+        System.out.println("pollLast(arr): " + pollLast(arr));
     }
 
     public static boolean offerFirst(int[] a, int el) {
@@ -62,4 +63,49 @@ public class homework4 {
         System.out.println();
         return true;
     }
+
+
+    public static Integer peekFirst(int[] a) { //Integer peekFirst(); //возвращает без удаления элемент из начала массива. Если массив пуст, возвращает значение null
+        if (a.length > 0 & a.length <= 5) {
+            return a[0];
+        } else if (a.length > 5) {
+            return null;
+        } else {
+            return null;
+        }
+    }
+
+    public static Integer peekLast(int[] a) { //Integer peekLast(); //возвращает без удаления последний элемент массива. Если массив пуст, возвращает значение null
+        if (a.length > 0 & a.length <= 5) {
+            return a[a.length - 1];
+        } else if (a.length > 5) {
+            return null;
+        } else {
+            return null;
+        }
+    }
+
+    public static Integer pollFirst(int[] a) { //Integer pollFirst(); //возвращает с удалением элемент из начала массива. Если массив пуст, возвращает значение null
+        if (a.length > 0 & a.length <= 5) {
+            int[] a2 = new int[a.length - 1];
+            System.arraycopy(a, 1, a2, 0, a2.length);
+            return a[0];
+        } else if (a.length > 5) {
+            return null;
+        } else {
+            return null;
+        }
+    }
+
+    public static Integer pollLast(int[] a) { //Integer pollLast(); //возвращает с удалением последний элемент массива. Если массив пуст, возвращает значение null
+        if (a.length > 0 & a.length <= 5) {
+            int[] a2 = new int[a.length - 1];
+            System.arraycopy(a, 0, a2, 0, a2.length);
+            return a[a.length - 1];
+        } else if (a.length > 5) {
+            return null;
+        } else {
+            return null;
+        }
+}
 }
