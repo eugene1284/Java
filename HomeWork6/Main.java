@@ -1,12 +1,17 @@
 package HomeWork6;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Data_NoteBook n1 = new Data_NoteBook(1, "Air", 8, 256);
-        Data_NoteBook n2 = new Data_NoteBook(2, "MagicBook", 16, 512);
+        NoteBook n1 = new NoteBook("1", "Air", "8", "256");
+        NoteBook n2 = new NoteBook("2", "MagicBook", "16", "512");
+
+        ArrayList<NoteBook> al = new ArrayList<NoteBook>();
+        al.add(n1);
+        al.add(n2);
 
         Scanner in = new Scanner(System.in);
 
@@ -18,12 +23,20 @@ public class Main {
 
         System.out.println("Введите поле, по которому хотите выполнить поиск ноутбука: ");
         String userAnswerFilterField = in.next();
-        System.out.println(Service.methodFindFieldInDataBase(userAnswerFilterField));
         System.out.println("Введите значение, введённого ранее поля, по которому хотите выполнить поиск ноутбука: ");
         String userAnswerFilterValue = in.next();
         in.close();
-        System.out.println(Service.methodFindAndWriteFilteringValue(userAnswerFilterField, userAnswerFilterValue));
 
+        NotebookContoller contoller = new NotebookContoller();
+
+        System.out.println(contoller.getFilteredNotebookList(al,userAnswerFilterField,userAnswerFilterValue));
+
+/*
+NotebookContoller - тип создаваемого объекта
+contoller - название создаваемого объекта
+new - говорит, что мы создаём объект
+
+ */
 
     }
 }
