@@ -1,15 +1,17 @@
 // data
 
-package HomeWork6;
+package HomeWork6.Data;
+
+import HomeWork6.Memory;
 
 public class NoteBook {
 
     private String id;
     private String model;
-    private String memory;
+    private Memory memory;
     private String ssd;
 
-    public NoteBook(String id, String model, String memory, String ssd) {
+    public NoteBook(String id, String model, Memory memory, String ssd) {
         this.id = id;
         this.model = model;
         this.memory = memory;
@@ -32,11 +34,11 @@ public class NoteBook {
         this.model = model;
     }
 
-    public String getMemory() {
+    public Memory getMemory() {
         return memory;
     }
 
-    public void setMemory(String memory) {
+    public void setMemory(Memory memory) {
         this.memory = memory;
     }
 

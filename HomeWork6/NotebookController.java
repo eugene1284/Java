@@ -1,11 +1,13 @@
 package HomeWork6;
 
+import HomeWork6.Data.NoteBook;
+
 import java.util.List;
 
-public class NotebookContoller {
+public class NotebookController {
     private NotebookService notebookService;
 
-    public NotebookContoller(){
+    public NotebookController(){
         this.notebookService = new NotebookService();
     }
 
