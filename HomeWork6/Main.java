@@ -15,12 +15,14 @@ public class Main {
         ArrayList<NoteBook> al = new ArrayList<NoteBook>();
         al.add(n1);
         al.add(n2);
+        al.add(n3);
 
         Scanner in = new Scanner(System.in);
 
         System.out.println("В нашей базе есть следующие ноутбуки:" +
                 "\n" + n1 +
-                "\n" + n2);
+                "\n" + n2 +
+                "\n" + n3 );
 
         System.out.println("Введите поле, по которому хотите выполнить поиск ноутбука: ");
         String userAnswerFilterField = in.next();

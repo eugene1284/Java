@@ -27,7 +27,7 @@ public class NotebookService {
                     if (notebook == null) {
                     }
 
-                    if (notebook.getMemory().equals(value)) {
+                    if (notebook.getMemory().equals(Memory.valueOf(value))) {
                         fList.add(notebook);
                     }
                     break;
@@ -42,6 +42,15 @@ public class NotebookService {
         }
 
         return fList;
+    }
+    
+    public List<NoteBook> getAsusNotebooks(List<NoteBook> list){
+        List<NoteBook> flist = new ArrayList<>();
+        for (NoteBook notebook: list) {
+            if (notebook.getModel().equalsIgnoreCase("Asus"))
+                flist.add(notebook);
+        }
+        return flist;
     }
 
 }
