@@ -1,23 +1,21 @@
-// data
-
-package HomeWork6;
+package HomeWork6.data;
 
 import HomeWork6.Memory;
 
-public class NoteBook {
+public abstract class Computer{
 
     private String id;
     private String model;
     private Memory memory;
     private String ssd;
 
-    public NoteBook(String id, String model, Memory memory, String ssd) {
+
+    public Computer(String id, String model, Memory memory, String ssd) {
         this.id = id;
         this.model = model;
         this.memory = memory;
         this.ssd = ssd;
     }
-
 
 
     public String getId() {
@@ -59,4 +57,6 @@ public class NoteBook {
                 "memory: " + memory + " GB, " +
                 "SSD:" + ssd + " GB";
     }
+
+
 }
