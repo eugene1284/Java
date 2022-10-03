@@ -1,7 +1,5 @@
 package HomeWork6;
 
-import HomeWork6.Data.NoteBook;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -38,8 +36,7 @@ new - говорит, что мы создаём объект
  */
 
         System.out.println(contoller.getFilteredNotebookList(al,userAnswerFilterField,userAnswerFilterValue));
-
-
+        //System.out.println(contoller.getFilteredNotebookList(al,userAnswerFilterField,"")); // данный метод вызовет Exception in thread "main" HomeWork6.StupidUserException
 
     }
 }

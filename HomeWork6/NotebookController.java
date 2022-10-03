@@ -1,7 +1,6 @@
 package HomeWork6;
 
-import HomeWork6.Data.NoteBook;
-
+import java.util.ArrayList;
 import java.util.List;
 
 public class NotebookController {
@@ -12,6 +11,20 @@ public class NotebookController {
     }
 
     public List<NoteBook> getFilteredNotebookList(List<NoteBook> list, String field, String value) {
+
+        if (list.isEmpty()){
+            return new ArrayList<>();
+        }
+
+        if (field.isBlank()){
+            throw new StupidUserException();
+        }
+
+        if (value.isBlank()){
+            throw new StupidUserException();
+        }
+
+
         return notebookService.methodFindAndWriteFilteringValue(list, field, value);
     }
 

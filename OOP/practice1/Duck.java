@@ -7,15 +7,12 @@ public class Duck implements Birds{
 
     @Override // меняем логику наследуемого метода
     public void fly() {
-        // TODO Auto-generated method stub
         System.out.println("");
     }
 
 
     @Override
     public void walk() {
-        // TODO Auto-generated method stub
-        
     } // implements - реализует
 
 

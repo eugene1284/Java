@@ -1,6 +1,6 @@
 // data
 
-package HomeWork6.Data;
+package HomeWork6;
 
 import HomeWork6.Memory;
 
@@ -17,6 +17,8 @@ public class NoteBook {
         this.memory = memory;
         this.ssd = ssd;
     }
+
+
 
     public String getId() {
         return id;

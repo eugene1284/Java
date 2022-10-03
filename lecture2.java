@@ -33,7 +33,6 @@ public class lecture2 {
         try {
             // код, в котором может появиться ошибка
         } catch (Exception e) {
-            // TODO: handle exception
             // обработка, если ошибка случилась
         } finally {
             // код, который выполнится в любом случае

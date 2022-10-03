@@ -1,7 +1,5 @@
 package HomeWork6;
 
-import HomeWork6.Data.NoteBook;
-
 import java.util.ArrayList;
 import java.util.List;
 
