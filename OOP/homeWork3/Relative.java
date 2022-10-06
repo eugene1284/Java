@@ -2,6 +2,10 @@
 
 package OOP.homeWork3;
 
-public class Relative {
+import java.util.List;
 
+public class Relative {
+    public void relative(List<Human> human, List<Relative> relative){
+
+    }
 }
