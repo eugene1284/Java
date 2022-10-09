@@ -1,4 +1,4 @@
-package OOP.homeWork3;
+package OOP.homeWork3.people;
 
 public enum Gender {
     MALE,FEMALE;

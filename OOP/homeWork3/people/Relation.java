@@ -1,6 +1,8 @@
-package OOP.homeWork3;
+package OOP.homeWork3.people;
 
 public enum Relation {
+    HUSBAND,
+    WIFE,
     FATHER,
     MOTHER,
     SISTER,

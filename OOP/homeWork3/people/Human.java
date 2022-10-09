@@ -8,9 +8,7 @@
 // ToDo: в main инициализировать коллекции и вызвать контроллер
  */
 
-package OOP.homeWork3;
-
-import HomeWork6.Memory;
+package OOP.homeWork3.people;
 
 public class Human {
     private String name;
@@ -56,5 +54,15 @@ public class Human {
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", gender=" + gender +
+                ", age='" + age + '\'' +
+                '}';
     }
 }
