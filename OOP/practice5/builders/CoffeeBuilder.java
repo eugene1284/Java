@@ -3,10 +3,12 @@
 
 //
 
-package OOP.practice5;
+package OOP.practice5.builders;
 
 // builder - паттерн разработки, когда мы делегируем отдельному классу сложный набор инструкций
 // (он может изменяться)
+
+import OOP.practice5.Coffee;
 
 public class CoffeeBuilder {
 
