@@ -14,4 +14,4 @@ public class MilkCoffeeBuilder extends CoffeeBuilder {
     }
 }
 
-// данный класс написан для иллюстрации принципа третьего принципа SOLID
+// данный класс написан для иллюстрации принципа SOLID L — Liskov Substitution
