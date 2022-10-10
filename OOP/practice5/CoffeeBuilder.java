@@ -5,42 +5,25 @@
 
 package OOP.practice5;
 
+// builder - паттерн разработки, когда мы делегируем отдельному классу сложный набор инструкций
+// (он может изменяться)
+
 public class CoffeeBuilder {
 
-    Object coffee;
-    Object sugar;
-    Object water;
+    private Coffee coffee;
+    private String water;
+    private String sugar;
+    private String typeOfCoffee;
 
-    public Object getCoffee() {
-        return coffee;
-    }
 
-    public void setCoffee(Object coffee) {
-        this.coffee = coffee;
-    }
 
-    public Object getSugar() {
-        return sugar;
-    }
-
-    public void setSugar(Object sugar) {
-        this.sugar = sugar;
-    }
-
-    public Object getWater() {
-        return water;
-    }
-
-    public void setWater(Object water) {
-        this.water = water;
-    }
-
-    // тут должен быть набор инструкций
+// тут должен быть набор инструкций
 
     //boilingWater(distilWater);
 
 
-    public void boilingWater(){
+    public void boilingWater() {
+        System.out.println("Вода вскипятилась");
     }
 
     public Coffee buildCoffee() {
@@ -48,7 +31,20 @@ public class CoffeeBuilder {
         // залей воду
         // перемешай
         // кофе готов
-       return null;
+        return new Coffee(typeOfCoffee, sugar, water);
+    }
+
+
+    public void setCoffee(String typeOfCoffee) {
+        this.typeOfCoffee = typeOfCoffee;
+    }
+
+    public void setWater(String water) {
+        this.water = water;
+    }
+
+    public void setSugar(String sugar) {
+        this.sugar = sugar;
     }
 
 
