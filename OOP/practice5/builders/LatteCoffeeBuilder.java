@@ -1,6 +1,19 @@
 package OOP.practice5.builders;
 
+import OOP.practice5.Coffee;
+import OOP.practice5.Latte;
+import OOP.practice5.MilkFrother;
+
 public class LatteCoffeeBuilder extends CoffeeBuilder{
+    private String milk;
+
+    public void setMilk(String milk) {this.milk = milk;}
+
+    public Coffee buildLatte(){
+        MilkFrother mf = new MilkFrother();
+        System.out.println("Your Latte, please");
+        return new Latte(buildCoffee(), milk);
+    }
 }
 
 
