@@ -2,13 +2,13 @@ package HomeWork6.service;
 
 import HomeWork6.data.Computer;
 
+import java.util.List;
+
 public interface Printable<T extends Computer> { // типизированный интерфейс
 
-    //TODO: Создать интерфейс Printable, содержащий описание метода void print(List<Computer>)
+    String printedVersion(List<T> unitList);
 
-    // на вход метода подаётся коллекция, ничего не возвращается
-
-
+    void print(List<T> unitList);
 }
 
 

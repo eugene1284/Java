@@ -14,4 +14,4 @@ public class ComputerCompareSSD implements Comparator<Computer> {
     }
 }
 
-// данный класс написан для иллюстрации принципа SOLID 2 Leskov
+// данный класс написан для иллюстрации принципа SOLID

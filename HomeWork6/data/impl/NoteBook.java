@@ -23,8 +23,10 @@ public class NoteBook extends Computer { //наследуем от абстра�
 
     @Override
     public String toString() {
-        return "NoteBook{" +
-                "batteryCapacity=" + batteryCapacity +
-                '}';
+        return "Notebook id=" + id + ", " +
+                "model: \"" + model + "\", " +
+                "memory: " + memory + " GB, " +
+                "SSD:" + ssd + " GB, " +
+                "Battery: " + BatteryCapacity + " mAh";
     }
 }
