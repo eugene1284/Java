@@ -21,6 +21,7 @@ public class NoteBook extends Computer { //наследуем от абстра�
         this.batteryCapacity = batteryCapacity;
     }
 
+    /*
     @Override
     public String toString() {
         return "Notebook id=" + id + ", " +
@@ -28,5 +29,5 @@ public class NoteBook extends Computer { //наследуем от абстра�
                 "memory: " + memory + " GB, " +
                 "SSD:" + ssd + " GB, " +
                 "Battery: " + BatteryCapacity + " mAh";
-    }
+    }*/
 }
