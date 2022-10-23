@@ -6,9 +6,7 @@ package exceptionHandling.practice.first.HomeWork;
  */
 
 
-import java.io.File;
-
-public class homeWork1 {
+public class homeWork1SomeTypeException {
     public static void main(String[] args) {
         // 1. Exception in thread "main" java.lang.ArithmeticException: / by zero
         System.out.println(divide(10,0));
