@@ -12,8 +12,7 @@ public class task1Write {
             int index = scanner.nextInt();
             if (index < arr.length && index >= 0)
                 arr[index] = 1;
-        }
-        else {
+        } else {
             System.out.println("Некорректный ввод");
         }
         System.out.println(Arrays.toString(arr));
