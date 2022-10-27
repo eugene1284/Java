@@ -1,4 +1,4 @@
-package HomeWork6.service;
+package HomeWork6.model.service;
 
 public class DesktopService /*implements Printable<Desktop>*/{
 

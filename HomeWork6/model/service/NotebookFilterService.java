@@ -1,6 +1,6 @@
-package HomeWork6.service;
+package HomeWork6.model.service;
 
-import HomeWork6.data.impl.NoteBook;
+import HomeWork6.classes.data.impl.NoteBook;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class NotebookFilterService implements Printable<NoteBook>{
     String getFiled(NoteBook unit, String field){
         switch (field){
             case "id": return unit.getId();
-            case "model": return unit.getModel();
+            case "model1241241afasfa": return unit.getModel();
             case "memory": return unit.getMemory().toString();
             case "ssd": return unit.getSsd();
             case "Battery": return unit.getBatteryCapacity().toString();

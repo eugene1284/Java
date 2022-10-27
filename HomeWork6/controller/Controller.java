@@ -1,11 +1,10 @@
 package HomeWork6.controller;
 
-import HomeWork6.DesktopLoader;
-import HomeWork6.NotebookLoader;
-import HomeWork6.data.impl.Desktop;
-import HomeWork6.data.impl.NoteBook;
-import HomeWork6.service.NotebookFilterService;
-import HomeWork6.service.NotebookService;
+import HomeWork6.classes.DesktopLoader;
+import HomeWork6.classes.NotebookLoader;
+import HomeWork6.classes.data.impl.Desktop;
+import HomeWork6.classes.data.impl.NoteBook;
+import HomeWork6.model.Preloader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +20,7 @@ public class Controller {
         loadNotebooks.loadNtb(notebooks);
         loadDT.loadDskt(desktops);
     }
-
+/*
     public String printNotebooks() {
         NotebookService ntbSvc = new NotebookService();
         return ntbSvc.printedVersion(notebooks);
@@ -31,5 +30,13 @@ public class Controller {
         NotebookFilterService nFs = new NotebookFilterService();
         return nFs.commonFilter(notebooks, field, request);
     }
+
+    public void loadParts() {
+        Preloader preLdr = new Preloader();
+        preLdr.parser();
+        cpuSvc.load(preLdr.parts.get("cpu"));
+        mBoardSvc.load(preLdr.parts.get("mainBoard"));
+
+    }*/
 
 }

@@ -1,6 +1,6 @@
-package HomeWork6.data;
+package HomeWork6.classes.data.impl;
 
-import HomeWork6.Memory;
+import HomeWork6.classes.Memory;
 
 public abstract class Computer{
 
@@ -53,7 +53,7 @@ public abstract class Computer{
     @Override
     public String toString() {
         return "Notebook id=" + id + ", " +
-                "model:'" + model + "', " +
+                "model1241241afasfa:'" + model + "', " +
                 "memory: " + memory + " GB, " +
                 "SSD:" + ssd + " GB";
     }

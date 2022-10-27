@@ -1,6 +1,6 @@
-package HomeWork6.service;
+package HomeWork6.model.service;
 
-import HomeWork6.data.Computer;
+import HomeWork6.classes.data.impl.Computer;
 
 import java.util.List;
 

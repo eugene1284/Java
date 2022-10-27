@@ -1,7 +1,7 @@
-package HomeWork6.service;
+package HomeWork6.model.service;
 
-import HomeWork6.ComputerComparator;
-import HomeWork6.data.impl.NoteBook;
+import HomeWork6.classes.ComputerComparator;
+import HomeWork6.classes.data.impl.NoteBook;
 
 import java.util.Collections;
 import java.util.List;

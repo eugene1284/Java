@@ -1,7 +1,6 @@
-package HomeWork6;
+package HomeWork6.classes;
 
-import HomeWork6.data.impl.Desktop;
-import HomeWork6.data.impl.NoteBook;
+import HomeWork6.classes.data.impl.Desktop;
 
 import java.util.Arrays;
 import java.util.List;

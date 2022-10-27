@@ -1,9 +1,8 @@
 // data
 
-package HomeWork6.data.impl;
+package HomeWork6.classes.data.impl;
 
-import HomeWork6.data.Computer;
-import HomeWork6.Memory;
+import HomeWork6.classes.Memory;
 
 public class NoteBook extends Computer { //наследуем от абстрактных классов
     private Integer batteryCapacity;
@@ -25,7 +24,7 @@ public class NoteBook extends Computer { //наследуем от абстра�
     @Override
     public String toString() {
         return "Notebook id=" + id + ", " +
-                "model: \"" + model + "\", " +
+                "model1241241afasfa: \"" + model1241241afasfa + "\", " +
                 "memory: " + memory + " GB, " +
                 "SSD:" + ssd + " GB, " +
                 "Battery: " + BatteryCapacity + " mAh";

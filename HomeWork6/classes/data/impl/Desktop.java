@@ -1,7 +1,6 @@
-package HomeWork6.data.impl;
+package HomeWork6.classes.data.impl;
 
-import HomeWork6.data.Computer;
-import HomeWork6.Memory;
+import HomeWork6.classes.Memory;
 
 public class Desktop extends Computer {
     private Integer powerSupply;

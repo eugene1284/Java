@@ -1,13 +1,8 @@
 package HomeWork6;
 
 import HomeWork6.controller.Controller;
-import HomeWork6.controller.NotebookController;
-import HomeWork6.data.impl.NoteBook;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.function.Supplier;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Main {
@@ -19,7 +14,7 @@ public class Main {
         Controller controller = new Controller();
 
         sb.append("\nВ нашей базе есть ноутбуки:\n");
-        sb.append(controller.printNotebooks());
+        //sb.append(controller.printNotebooks());
         logger.info(sb.toString());
         try (Scanner input = new Scanner(System.in)) {
             System.out.print("Что будем искать? ");
@@ -27,6 +22,9 @@ public class Main {
             input.reset();
             mLever.chooser(deviceSection, logger, controller);
         }
+
+
+
 
     }
 
@@ -36,7 +34,7 @@ public class Main {
             case "Notebooks":
             case "notebooks":
                 fields = askField();
-                logger.info(controller.filterNotebooks(fields[0], fields[1]));
+                //logger.info(controller.filterNotebooks(fields[0], fields[1]));
                 break;
             default:
                 throw new IllegalStateException("Wrong search area");

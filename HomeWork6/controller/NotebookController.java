@@ -1,10 +1,9 @@
 package HomeWork6.controller;
 
-import HomeWork6.data.impl.NoteBook;
-import HomeWork6.service.NotebookService;
-import HomeWork6.service.NotebookServiceSortedBySsd;
+import HomeWork6.classes.data.impl.NoteBook;
+import HomeWork6.model.service.NotebookService;
+import HomeWork6.model.service.NotebookServiceSortedBySsd;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class NotebookController {
