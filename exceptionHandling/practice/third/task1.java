@@ -24,7 +24,7 @@ public class task1 {
     }
 
     public static void doSomething() throws FileNotFoundException {
-        FileReader fr = new FileReader("exceptionHandling/practice/third/file.txt");
+        FileReader fr = new FileReader("exceptionHandling/practice/third/testRead.txt");
         //fr.read(); // IOException
     }
 }
